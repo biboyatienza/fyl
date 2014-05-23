@@ -1,0 +1,53 @@
+<%= form_for(@result) do |f| %>
+  <% if @result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@result.errors.count, "error") %> prohibited this result from being saved:</h2>
+
+      <ul>
+      <% @result.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :draw_date %><br>
+    <%= f.date_select :draw_date %>
+  </div>
+  <div class="field">
+    <%= f.label :result_1 %><br>
+    <%= f.number_field :result_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :result_2 %><br>
+    <%= f.number_field :result_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :result_3 %><br>
+    <%= f.number_field :result_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :result_4 %><br>
+    <%= f.number_field :result_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :result_5 %><br>
+    <%= f.number_field :result_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :result_6 %><br>
+    <%= f.number_field :result_6 %>
+  </div>
+  <div class="field">
+    <%= f.label :winners %><br>
+    <%= f.text_field :winners %>
+  </div>
+  <div class="field">
+    <%= f.label :jackpot_price %><br>
+    <%= f.text_field :jackpot_price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

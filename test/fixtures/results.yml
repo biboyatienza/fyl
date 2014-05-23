@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  draw_date: 2014-05-23
+  result_1: 1
+  result_2: 1
+  result_3: 1
+  result_4: 1
+  result_5: 1
+  result_6: 1
+  winners: 
+  jackpot_price: 9.99
+
+two:
+  draw_date: 2014-05-23
+  result_1: 1
+  result_2: 1
+  result_3: 1
+  result_4: 1
+  result_5: 1
+  result_6: 1
+  winners: 
+  jackpot_price: 9.99
