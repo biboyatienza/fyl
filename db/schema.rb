@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140526162347) do
+ActiveRecord::Schema.define(version: 20140529073150) do
 
   create_table "combinations", force: true do |t|
-    t.integer  "winning_number"
+    t.string   "winning_number", limit: 2
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "result_id"
   end
 
   create_table "games", force: true do |t|
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140526162347) do
     t.decimal  "jackpot_price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "game_id"
   end
 
 end
